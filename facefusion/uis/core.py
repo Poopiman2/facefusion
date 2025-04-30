@@ -95,8 +95,6 @@ def launch() -> None:
             ui_layout_module = load_ui_layout_module(ui_layout)
             ui_layout_module.run(ui)
 
-    # ✅ Launch Gradio app with public link
-    ui.launch(share=True)
 
 def get_theme() -> gradio.Theme:
 	return gradio.themes.Base(
