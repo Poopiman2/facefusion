@@ -117,3 +117,11 @@ def listen() -> None:
 
 def run(ui : gradio.Blocks) -> None:
 	ui.launch(share=True)
+
+
+if __name__ == '__main__':
+	print("🚀 Starting FaceFusion UI...")
+	if pre_check():
+		ui = render()
+		listen()
+		run(ui)
